@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ignite-test-web:war">
+    <output-path>$PROJECT_DIR$/ignite-test-web/target</output-path>
+    <root id="archive" name="ignite-test.war">
+      <element id="artifact" artifact-name="ignite-test-web:war exploded" />
+    </root>
+  </artifact>
+</component>

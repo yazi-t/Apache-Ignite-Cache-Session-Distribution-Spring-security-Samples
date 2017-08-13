@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ignite-test-spring-mvc:war">
+    <output-path>$PROJECT_DIR$/ignite-test-spring-mvc/target</output-path>
+    <root id="archive" name="ignite-spring.war">
+      <element id="artifact" artifact-name="ignite-test-spring-mvc:war exploded" />
+    </root>
+  </artifact>
+</component>

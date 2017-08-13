@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ignite-test.iml" filepath="$PROJECT_DIR$/Ignite-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ignite-test-cmd/ignite-test-cmd.iml" filepath="$PROJECT_DIR$/ignite-test-cmd/ignite-test-cmd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ignite-test-spring-mvc/ignite-test-spring-mvc.iml" filepath="$PROJECT_DIR$/ignite-test-spring-mvc/ignite-test-spring-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ignite-test-web/ignite-test-web.iml" filepath="$PROJECT_DIR$/ignite-test-web/ignite-test-web.iml" />
+    </modules>
+  </component>
+</project>

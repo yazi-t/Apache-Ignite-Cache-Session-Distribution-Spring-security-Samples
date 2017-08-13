@@ -1,0 +1,34 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+    <http auto-config="true" create-session="always" use-expressions="true" >
+        <form-login
+                login-page="/login"
+                default-target-url="/home"
+                authentication-failure-url="/login?error"
+                username-parameter="username"
+                password-parameter="password"
+                always-use-default-target="true"/>
+
+        <logout invalidate-session="true" logout-success-url="/login" delete-cookies="JSESSIONID"/>
+
+        <session-management session-fixation-protection="newSession" invalid-session-url="/"
+                            session-authentication-error-url="/login">
+            <concurrency-control session-registry-alias="sessionRegistry" max-sessions="10"
+                                 expired-url="/" error-if-maximum-exceeded="true"/>
+        </session-management>
+
+        <access-denied-handler error-page="/403"/>
+    </http>
+
+    <authentication-manager>
+        <authentication-provider user-service-ref="userDetailsService">
+        </authentication-provider>
+    </authentication-manager>
+
+</beans:beans>
