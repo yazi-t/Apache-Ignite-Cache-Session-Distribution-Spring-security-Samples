@@ -8,7 +8,7 @@ Ignite is a memory-centric data platform
     and highly available
     with powerful SQL,
     key-value and processing APIs
-for mo info https://ignite.apache.org/
+Find more info on official web site: https://ignite.apache.org/
 
 ## Modules
 ### Command Line Samples
