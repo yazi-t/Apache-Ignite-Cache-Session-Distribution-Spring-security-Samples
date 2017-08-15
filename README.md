@@ -29,20 +29,6 @@ Ignite allows to session replication also. Please check ignite documentation for
 ### Spring MVC + Spring security session distribution
 This demonstrates login session distribution through multiple server instances in Spring MVC + Spring security application.
 Login session can be accessed from any server node.
-
-Note: To test distributed deployments please deploy servers in separate domains. Otherwise it will raise 'JSEESSIONID' cookie issues.
-Please look into following example.
-
-eg.
-Not to deploy:
-    first server: localhost:8080/ignite-spring/
-    second server: localhost:8180/ignite-spring/
-    
-How to deploy:
-    first server: one.localhost:8080/ignite-spring/
-    second server: two.localhost:8180/ignite-spring/
-    
-(You can create virtual hosts/virtual domains in window environment by editing C:\Windows\System32\drivers\etc\hosts file.)
  
 ## Environment
     > Java version: JDK 8
