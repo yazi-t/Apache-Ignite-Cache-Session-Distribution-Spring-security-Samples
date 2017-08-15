@@ -8,7 +8,7 @@ Ignite is a memory-centric data platform
     and highly available
     with powerful SQL,
     key-value and processing APIs
-Find more info on official web site: https://ignite.apache.org/
+for more info follow Apache Ignite official web site https://ignite.apache.org/
 
 ## Modules
 ### Command Line Samples
@@ -30,8 +30,19 @@ Ignite allows to session replication also. Please check ignite documentation for
 This demonstrates login session distribution through multiple server instances in Spring MVC + Spring security application.
 Login session can be accessed from any server node.
 
- Known issues:
- Integration issue can be found on this link - https://stackoverflow.com/questions/45648884/apache-ignite-spring-secutiry-error
+Note: To test distributed deployments please deploy servers in separate domains. Otherwise it will raise 'JSEESSIONID' cookie issues.
+Please look into following example.
+
+eg.
+Not to deploy:
+    first server: localhost:8080/ignite-spring/
+    second server: localhost:8180/ignite-spring/
+    
+How to deploy:
+    first server: one.localhost:8080/ignite-spring/
+    second server: two.localhost:8180/ignite-spring/
+    
+(You can create virtual hosts/virtual domains in window environment by editing C:\Windows\System32\drivers\etc\hosts file.)
  
 ## Environment
     > Java version: JDK 8
