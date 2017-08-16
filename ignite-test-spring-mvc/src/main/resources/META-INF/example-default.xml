@@ -36,6 +36,7 @@
             <list>
                 <bean class="org.apache.ignite.configuration.CacheConfiguration">
                     <property name="name" value="example"/>
+                    <!-- Use REPLICATED as value to make session replicated -->
                     <property name="cacheMode" value="PARTITIONED"/>
                 </bean>
             </list>
@@ -82,14 +83,6 @@
             </bean>
         </property>
 
-    </bean>
-
-    <bean class="org.apache.ignite.configuration.CacheConfiguration">
-        <!-- Cache name. -->
-        <property name="name" value="replicated"/>
-
-        <!-- Cache mode. -->
-        <property name="cacheMode" value="REPLICATED"/>
     </bean>
 
 </beans>
